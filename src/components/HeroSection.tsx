@@ -10,6 +10,13 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToAbout = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center hero-gradient">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -37,7 +44,8 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 text-lg"
+              onClick={scrollToAbout}
+              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 text-lg transition-all duration-200"
             >
               Learn Our Story
             </Button>
