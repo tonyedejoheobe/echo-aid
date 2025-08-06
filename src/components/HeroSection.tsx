@@ -45,7 +45,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               onClick={scrollToAbout}
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 text-lg transition-all duration-200"
+              className="border-2 border-white text-white hover:bg-white hover:text-primary bg-transparent font-semibold px-8 py-4 text-lg transition-all duration-200"
             >
               Learn Our Story
             </Button>
